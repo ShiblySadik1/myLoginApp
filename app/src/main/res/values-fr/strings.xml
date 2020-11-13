@@ -5,4 +5,5 @@
     <string name="AudioNavButton">Audio Database</string>
     <string name="RecipeNavButton">Recipe</string>
     <string name="TicketMasterNavButton">TicketMaster</string>
+    <string name="EmptyNavButton">EmptyNavButton</string>
 </resources>

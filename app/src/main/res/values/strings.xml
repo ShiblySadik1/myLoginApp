@@ -4,5 +4,12 @@
     <string name="AudioNavButton">Audio Database</string>
     <string name="RecipeNavButton">Recipe</string>
     <string name="TicketMasterNavButton">TicketMaster</string>
+    <string-array name="navItems">
+        <item>Home</item>
+        <item>Covid-19</item>
+        <item>Audio Database</item>
+        <item>Recipe</item>
+        <item>TicketMaster</item>
+    </string-array>
 
 </resources>
