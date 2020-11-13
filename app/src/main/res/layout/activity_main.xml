@@ -9,23 +9,23 @@
         android:id="@+id/covid"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Covid-19" />
+        android:text="@string/CovidNavButton" />
 
     <Button
         android:id="@+id/audioData"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Audio Database"/>
+        android:text="@string/CovidNavButton"/>
 
     <Button
         android:id="@+id/recipe"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Recipe" />
+        android:text="@string/RecipeNavButton" />
 
     <Button
         android:id="@+id/ticketMaster"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="TicketMaster" />
+        android:text="@string/TicketMasterNavButton" />
 </LinearLayout>
