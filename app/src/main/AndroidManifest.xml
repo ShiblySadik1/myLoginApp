@@ -14,7 +14,9 @@
         android:supportsRtl="true"
         android:windowSoftInputMode="adjustResize"
         android:theme="@style/AppTheme">
+        <activity android:name="com.example.finalProject.Navigation" />
         <activity android:name="com.example.finalProject.Covid" />
+<!--        <activity android:name="com.example.finalProject.MainActivity" />-->
           <activity android:name="com.example.finalProject.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

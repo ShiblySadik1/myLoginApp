@@ -1,31 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
   <LinearLayout android:orientation="vertical"
     android:gravity="top"
     android:layout_height="match_parent"
     android:layout_width="match_parent"
     xmlns:android="http://schemas.android.com/apk/res/android">
 
+    <include layout="@layout/activity_navigation"/>
+
     <Button
         android:id="@+id/covid"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Covid-19" />
+        android:text="@string/CovidNavButton" />
 
     <Button
         android:id="@+id/audioData"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Audio Database"/>
+        android:text="@string/CovidNavButton"/>
 
     <Button
         android:id="@+id/recipe"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Recipe" />
+        android:text="@string/RecipeNavButton" />
 
     <Button
         android:id="@+id/ticketMaster"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="TicketMaster" />
+        android:text="@string/TicketMasterNavButton" />
 </LinearLayout>
