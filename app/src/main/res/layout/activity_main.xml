@@ -12,13 +12,13 @@
         android:id="@+id/covid"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/CovidNavButton" />
+        android:text="@string/CovidNavButton"/>
 
     <Button
         android:id="@+id/audioData"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/CovidNavButton"/>
+        android:text="@string/AudioNavButton"/>
 
     <Button
         android:id="@+id/recipe"
