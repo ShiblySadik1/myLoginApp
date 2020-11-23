@@ -7,6 +7,8 @@ import android.os.Bundle;
 import android.widget.Button;
 
 import com.example.androidlabs.R;
+import com.example.finalProject.Audio.AudioActivity;
+import com.example.finalProject.audioTask.AudioScreen;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -15,10 +17,10 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        Button covid = (Button) findViewById(R.id.covid);
-        covid.setOnClickListener( (click) ->
-        { Intent covidActivity = new Intent(MainActivity.this, Covid.class);
-          startActivity(covidActivity); });
-
+        Button audioData = findViewById(R.id.audioData);
+        audioData.setOnClickListener(view -> {
+            Intent i = new Intent(MainActivity.this, AudioScreen.class);
+            startActivity(i);
+        });
     }
 }

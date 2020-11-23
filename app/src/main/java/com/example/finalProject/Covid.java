@@ -26,11 +26,11 @@ public class Covid extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_covid);
 
-        ListView myList = findViewById(R.id.listView);
-        myAdapter = new MyListAdapter();
-        myList.setAdapter(myAdapter);
-
-        searchText = findViewById(R.id.searchText);
+//        ListView myList = findViewById(R.id.listView);
+//        myAdapter = new MyListAdapter();
+//        myList.setAdapter(myAdapter);
+//
+//        searchText = findViewById(R.id.searchText);
         searchButton = findViewById(R.id.magnify);
         searchButton.setOnClickListener( (click) ->
         {
@@ -64,8 +64,8 @@ public class Covid extends AppCompatActivity {
                 View newView = inflater.inflate(R.layout.row_covidlayout, parent, false);
 
                 //set what the text should be for this row:
-                TextView tView = newView.findViewById(R.id.searchText);
-                tView.setText(getItem(position).toString());
+//                TextView tView = newView.findViewById(R.id.searchText);
+//                tView.setText(getItem(position).toString());
 
                 //return it to be put in the table
                 return newView;

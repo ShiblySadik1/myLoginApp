@@ -2,6 +2,10 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.androidlabs">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
     <uses-feature
         android:name="android.hardware.camera"
         android:required="true" />
@@ -10,14 +14,18 @@
         android:allowBackup="true"
         android:icon="@drawable/flag"
         android:label="@string/app_name"
+        android:requestLegacyExternalStorage="true"
         android:roundIcon="@mipmap/custom"
         android:supportsRtl="true"
-        android:windowSoftInputMode="adjustResize"
-        android:theme="@style/AppTheme">
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true"
+        android:windowSoftInputMode="adjustResize">
+        <activity android:name="com.example.finalProject.audioTask.AlbumDetailsActivity"></activity>
+        <activity android:name="com.example.finalProject.audioTask.AudioScreen" />
         <activity android:name="com.example.finalProject.Navigation" />
         <activity android:name="com.example.finalProject.Covid" />
-<!--        <activity android:name="com.example.finalProject.MainActivity" />-->
-          <activity android:name="com.example.finalProject.MainActivity">
+        <activity android:name="com.example.finalProject.Audio.AudioActivity" />
+        <activity android:name="com.example.finalProject.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

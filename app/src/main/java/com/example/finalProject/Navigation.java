@@ -12,24 +12,22 @@ import android.widget.Spinner;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.androidlabs.R;
+import com.example.finalProject.Audio.AudioActivity;
 
-public class Navigation extends AppCompatActivity
-{
+public class Navigation extends AppCompatActivity {
     private final Intent goHome = new Intent(Navigation.this, MainActivity.class);
     private final Intent goToCovid = new Intent(Navigation.this, Covid.class);
+    private final Intent goToAudio = new Intent(this, AudioActivity.class);
 
     @Override
-    protected void onCreate(Bundle savedInstanceState)
-    {
+    protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_navigation);
 
         Spinner navSpinner = findViewById(R.id.navSpinner);
-        navSpinner.setOnItemClickListener((parent, view, position, id) ->
-        {
-            if(position == 0) startActivity(goHome);
-            else if(position == 1) startActivity(goToCovid);
-
+        navSpinner.setOnItemClickListener((parent, view, position, id) -> {
+            if (position == 0) startActivity(goHome);
+            else if (position == 1) startActivity(goToCovid);
         });
     }
 

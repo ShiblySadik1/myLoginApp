@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:foo="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:layout_margin="10dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:id="@+id/artist_name"
+        android:inputType="textMultiLine"
+        android:hint="Type Artist Name"
+        />
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:text="Search"
+        android:textColor="#fff"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        android:id="@+id/search"
+     android:layout_margin="20dp"
+        />
+
+</LinearLayout>
